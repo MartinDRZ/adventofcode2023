@@ -38,7 +38,7 @@ def strToNum(item):
         return item;
 
 for x in lines:
-    newX = re.findall(r'\d|one|two|three|four|five|six|seven|eight|nine', x, overlapped=True)
+    newX = re.findall('\d|one|two|three|four|five|six|seven|eight|nine', x, overlapped=True)
     numsX = map(strToNum, newX);
     listNumsX = list(numsX);
     total2 += int(listNumsX[0]+listNumsX[-1]);
