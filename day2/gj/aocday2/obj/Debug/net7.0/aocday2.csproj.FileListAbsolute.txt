@@ -1,0 +1,15 @@
+C:\Users\redem\Documents\c#\adventofcode2023\day2\gj\aocday2\bin\Debug\net7.0\aocday2.exe
+C:\Users\redem\Documents\c#\adventofcode2023\day2\gj\aocday2\bin\Debug\net7.0\aocday2.deps.json
+C:\Users\redem\Documents\c#\adventofcode2023\day2\gj\aocday2\bin\Debug\net7.0\aocday2.runtimeconfig.json
+C:\Users\redem\Documents\c#\adventofcode2023\day2\gj\aocday2\bin\Debug\net7.0\aocday2.dll
+C:\Users\redem\Documents\c#\adventofcode2023\day2\gj\aocday2\bin\Debug\net7.0\aocday2.pdb
+C:\Users\redem\Documents\c#\adventofcode2023\day2\gj\aocday2\obj\Debug\net7.0\aocday2.csproj.AssemblyReference.cache
+C:\Users\redem\Documents\c#\adventofcode2023\day2\gj\aocday2\obj\Debug\net7.0\aocday2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\redem\Documents\c#\adventofcode2023\day2\gj\aocday2\obj\Debug\net7.0\aocday2.AssemblyInfoInputs.cache
+C:\Users\redem\Documents\c#\adventofcode2023\day2\gj\aocday2\obj\Debug\net7.0\aocday2.AssemblyInfo.cs
+C:\Users\redem\Documents\c#\adventofcode2023\day2\gj\aocday2\obj\Debug\net7.0\aocday2.csproj.CoreCompileInputs.cache
+C:\Users\redem\Documents\c#\adventofcode2023\day2\gj\aocday2\obj\Debug\net7.0\aocday2.dll
+C:\Users\redem\Documents\c#\adventofcode2023\day2\gj\aocday2\obj\Debug\net7.0\refint\aocday2.dll
+C:\Users\redem\Documents\c#\adventofcode2023\day2\gj\aocday2\obj\Debug\net7.0\aocday2.pdb
+C:\Users\redem\Documents\c#\adventofcode2023\day2\gj\aocday2\obj\Debug\net7.0\aocday2.genruntimeconfig.cache
+C:\Users\redem\Documents\c#\adventofcode2023\day2\gj\aocday2\obj\Debug\net7.0\ref\aocday2.dll
