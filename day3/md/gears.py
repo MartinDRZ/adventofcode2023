@@ -2,37 +2,33 @@ import regex as re
 re_pattern = "[0-9]+"
 
 
-with open("/home/martin/git-clones/adventofcode2023/files/md_files/day3_test_input","r") as file:
-    input_lines = file.read().splitlines()
-    line_count = len(file.readlines())
+with open("/home/martin/git-clones/adventofcode2023/files/md_files/day3_input.txt","r") as file:
+    input_lines = file.readlines()
+    line_count = len(input_lines)
     valid_part_numbers = []
     for count, input_line in enumerate(input_lines):
+        print("line is of length " + str(len(input_line)))
         line_numbers = re.finditer(re_pattern, input_line)
         for match in line_numbers:
-            print(int(match.captures()[0]))
-            print(match.start())
-            print(match.end())
             if int(match.start()) - 1 < 0:
                 before = 0
             else:
                 before = int(match.start()) - 1
             after = int(match.end()) + 1
             found_chars_sameline = input_line[before:after]
-            if count - 1 < 0:
+            linebeforecount = count - 1
+            if linebeforecount < 0:
                 linebefore = ""
             else:
-                linebefore = input_lines[count - 1]
+                linebefore = input_lines[linebeforecount]
             found_chars_linebefore = linebefore[before:after]
-            if count + 1 > line_count:
+            lineaftercount = count + 1
+            if lineaftercount >= line_count:
                 lineafter = ""
             else:
-                lineafter = input_lines[count + 1]
+                lineafter = input_lines[lineaftercount]
             found_chars_lineafter = lineafter[before:after]
             string_test = found_chars_lineafter + found_chars_linebefore + found_chars_sameline
-            print("count is: " + str(count))
-            print("linebefore " + linebefore)
-            print("lineafter " + lineafter)
-            print(string_test)
             for char in string_test:
                 match_char = re.search("(\.|[0-9])", char)
                 if not match_char:
