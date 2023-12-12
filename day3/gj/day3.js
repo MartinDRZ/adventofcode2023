@@ -2,10 +2,7 @@ const fs = require("fs");
 
 const formattedInput = fs.readFileSync("input.txt", "utf-8").split("\n");
 
-//part 1
-
 let part1 = 0;
-let part2 = 0;
 
 formattedInput.forEach((line, i) => {
   const nums = line.replaceAll(/\./g, " ").matchAll(/\d+/g); //makes iterable object (NOT array (I didn't know that)), hence the lack of forEach/for...in on line 12)
@@ -36,4 +33,4 @@ formattedInput.forEach((line, i) => {
 
 console.log(part1);
 
-//part 2
+//part2 - stuck
