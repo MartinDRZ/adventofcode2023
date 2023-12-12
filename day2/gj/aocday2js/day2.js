@@ -1,5 +1,4 @@
 const fs = require("node:fs");
-const { max } = require("pg/lib/defaults");
 
 const formattedInput = fs
   .readFileSync("input.txt", "utf-8")
@@ -18,25 +17,16 @@ const formattedInput = fs
           };
         })
       ),
-    ];
+    ].map((draw) => {
+      return {
+        green: (draw.find((item) => item.colour === "green") ?? 0).num ?? 0,
+        red: (draw.find((item) => item.colour === "red") ?? 0).num ?? 0,
+        blue: (draw.find((item) => item.colour === "blue") ?? 0).num ?? 0,
+      };
+    });
     return {
       "Game Num": gameNum,
-      draws: draws.map((draw) => {
-        return {
-          green:
-            draw.find((item) => item.colour === "green") === undefined
-              ? 0
-              : draw.find((item) => item.colour === "green").num,
-          red:
-            draw.find((item) => item.colour === "red") === undefined
-              ? 0
-              : draw.find((item) => item.colour === "red").num,
-          blue:
-            draw.find((item) => item.colour === "blue") === undefined
-              ? 0
-              : draw.find((item) => item.colour === "blue").num,
-        };
-      }),
+      draws,
     };
   });
 
