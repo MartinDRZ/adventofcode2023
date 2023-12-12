@@ -6,9 +6,8 @@ def max_cubes(line: str, comparison_color: str) -> int:
 
 with open("/home/martin/git-clones/adventofcode2023/files/md_files/day2_input","r") as games:
     input_lines = games.read().splitlines()
-    possible_game_ids = []
-    for game_id, line in enumerate(input_lines, start=1):
-        if max_cubes(line, 'red') <= 12 and max_cubes(line, 'green') <= 13 and max_cubes(line, 'blue') <= 14:
-            possible_game_ids.append(game_id)
+    set_multiples = []
+    for line in input_lines:
+        set_multiples.append(max_cubes(line, 'red') * max_cubes(line, 'green') * max_cubes(line, 'blue'))
 
-print(sum(possible_game_ids))
+print(sum(set_multiples))
