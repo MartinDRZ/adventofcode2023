@@ -56,8 +56,6 @@ for (let i = 0; i < formattedInput.length; i++) {
     });
   });
 
-  //add copies for copies
-
   for (let j = i + 1; j <= i + count; j++) {
     copies[j] += copies[i];
   }
